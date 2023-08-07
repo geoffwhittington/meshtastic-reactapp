@@ -5,10 +5,10 @@ export const Connection = () => {
 
   const connect = () => {
     void connection.connect({
-      address: "10.0.0.10",
+      address: "meshtastic.local",
       fetchInterval: 3000,
     });
   };
 
-  return <button onClick={connect}>Connect Bluetooth</button>;
+  return <button onClick={connect}>Connect TCP</button>;
 };
